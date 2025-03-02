@@ -1,0 +1,5 @@
+DB_HOST = "localhost"
+DB_USER = "root"
+DB_PASSWORD = "Kunalm#8874"
+DB_NAME = "udhari_book"
+SECRET_KEY = "Kunalm@8874"
