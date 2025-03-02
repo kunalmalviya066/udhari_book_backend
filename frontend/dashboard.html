@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Udhari Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Udhari Book</h2>
+        <button onclick="logout()">Logout</button>
+
+        <h3>Add Customer</h3>
+        <input type="text" id="name" placeholder="Customer Name">
+        <input type="text" id="customer_mobile" placeholder="Mobile Number">
+        <input type="number" id="balance" placeholder="Outstanding Balance">
+        <button onclick="addCustomer()">Add Customer</button>
+
+        <h3>Customer List</h3>
+        <input type="text" id="search" placeholder="Search Customers" onkeyup="searchCustomer()">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Balance</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="customerTable"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
